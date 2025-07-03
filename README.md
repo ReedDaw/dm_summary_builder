@@ -9,12 +9,18 @@ Error handling & retries – tenacity ensures transient 502/RateLimit errors get
 Idempotent – Rows that already have a summary_web value are skipped, letting you rerun endlessly as new DM rows are appended.
 
 One-time setup: 
+
 pip install openai wikipedia pandas tqdm tenacity python-env-config
+
 echo 'export OPENAI_API_KEY="sk-paste-your-key-here"' >> ~/.zshrc
+
 source ~/.zshrc     # or restart Terminal
 
 
 Running the first big back-fill: 
+
 python3 dm_summary_builder.py \
+    
     --infile  dms_needing_summaries.csv \
+    
     --outfile dm_summaries_completed.csv
