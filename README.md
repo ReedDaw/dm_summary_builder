@@ -1,4 +1,5 @@
 How it works
+
 Wikipedia first-pass – Cheap, rate-limit-free scrape grabs a few sentences.
 
 LLM polishing – Feeds the extract (or “None”) plus a tight prompt to GPT-4o (or 3.5-Turbo if cost-sensitive) to craft a sleek, Column-O-style bio.
